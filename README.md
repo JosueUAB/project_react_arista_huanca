@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+#  Proyecto Final:  Gestor de Tareas  (React + MUI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Diplomado Desarrollo Web Full Stack - Módulo 3**
+**Estudiante:** Josue Israel Arista Huanca
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción
 
-## React Compiler
+Esta es una aplicación web moderna desarrollada con **React** y **Material UI** para la gestión de tareas personales. Permite crear, leer, actualizar y eliminar tareas (CRUD), así como gestionar el estado de las mismas (Pendiente/Finalizada) a través de una interfaz intuitiva y agradable.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Características Principales
 
-## Expanding the ESLint configuration
+*   **Gestión de Tareas:** Crear, editar, eliminar y visualizar tareas.
+*   **Estados:** Marcar tareas como "Pendiente" o "Finalizada" con un solo clic.
+*   **Búsqueda:** Filtrado de tareas en tiempo real.
+*   **Modales Interactivos:** Edición rápida y visualización de detalles sin salir de la página.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+##  Requisitos Previos
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu sistema:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+*   **Node.js** (versión 18 o superior recomendada)
+*   **npm** (normalmente viene instalado con Node.js)
+
+---
+
+##  Guía de Instalación y Ejecución
+
+### 1. Clonar o Descargar el Proyecto
+Asegúrate de estar en la carpeta raíz del proyecto (`project_react_arista_huanca`).
+
+### 2. Instalar Dependencias
+Ejecuta el siguiente comando en la terminal para descargar todas las librerías necesarias:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Configurar Variables de Entorno
+Crea un archivo `.env` en la raíz (puedes copiar el `.env.sample` si existe) y configura la URL de tu API backend:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+VITE_API_URL=https://carlos-trigo.onrender.com/api
 ```
+
+### 4. Ejecutar el Servidor de Desarrollo
+Para iniciar la aplicación, corre el siguiente comando:
+
+```bash
+npm run dev
+```
+
+Una vez iniciado, verás una URL en la terminal (ej: `http://localhost:5173/`). Abre ese enlace en tu navegador.
+
+---
+
+## Scripts Disponibles
+
+En el archivo `package.json` puedes encontrar los siguientes comandos:
+
+*   `npm run dev`: Inicia el servidor de desarrollo.
+*   `npm run build`: Compila la aplicación para producción.
+*   `npm run lint`: Ejecuta el linter para encontrar errores de código.
+*   `npm run preview`: Previsualiza la versión de producción localmente.
+
+---
+
