@@ -4,7 +4,7 @@
 
 **Estudiante: Josue Israel Arista Huanca**
 
-**Enlace del proyecto deployado : ** https://josueuab.github.io/project_react_arista_huanca/
+**Enlace del proyecto deployado:** https://josueuab.github.io/project_react_arista_huanca/
 
 ---
 
