@@ -1,7 +1,9 @@
 #  Proyecto Final:  Gestor de Tareas  (React + MUI)
 
 **Diplomado Desarrollo Web Full Stack - Módulo 3**
+
 **Estudiante: Josue Israel Arista Huanca**
+
 **Enlace del proyecto deployado : ** https://josueuab.github.io/project_react_arista_huanca/
 
 ---
